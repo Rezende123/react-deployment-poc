@@ -19,7 +19,7 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          POC TESTANDO CI/CD
+          POC TESTANDO CI/CD 1
         </main>
       </div>
     </>
