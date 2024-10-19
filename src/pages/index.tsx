@@ -19,7 +19,7 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          POC MATC84
+          POC TESTE DE ESTEIRA V2
         </main>
       </div>
     </>
