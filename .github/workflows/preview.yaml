@@ -20,6 +20,25 @@ jobs:
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
       - name: Embold scan step
+        inputs:
+          emboldUrl:
+            description: 'URL of your Embold instance'
+            required: true
+            default: ''
+          emboldToken:
+            description: 'Your Embold access token'
+            required: true
+            default: ''
+          emboldRepoUid:
+            description: 'Embold repository UID where the results will be published'
+            required: true
+            default: ''
+        outputs:
+          status:
+            description: 'Status of the scan'
+        runs:
+          using: 'node18'
+          main: 'srx/index.tsx'
         id: embold
         with:
           emboldUrl: ${{ secrets.EMB_URL }}
