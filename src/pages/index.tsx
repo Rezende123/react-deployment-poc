@@ -13,6 +13,7 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const asd = ''
   return (
     <>
       <div
